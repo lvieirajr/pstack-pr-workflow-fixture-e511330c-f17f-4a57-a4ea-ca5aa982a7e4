@@ -1,0 +1,1 @@
+const input=process.argv[2];if(input === undefined || !input.trim() || !/^[0-9, ]*$/.test(input)){console.error('invalid input');process.exitCode=2}else console.log(input.split(',').reduce((n,v)=>n+Number(v),0));
